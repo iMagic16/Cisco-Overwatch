@@ -16,7 +16,20 @@ namespace CiscoOverwatch
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OverwatchMain());
+            Application.Run(new OverwatchMainForm());
         }
+    }
+
+    public class Debug
+    {
+        /// <summary>
+        /// Outputs to the console with a timestamp before the message.
+        /// Usage: ConOut(Message)
+        /// </summary>
+        public static void ConOut(string Msg)
+        {
+            Console.WriteLine("{0}:{1}.{2}|{3}: " + Msg, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second, DateTime.Now.Millisecond);
+        }
+
     }
 }

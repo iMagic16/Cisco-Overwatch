@@ -63,46 +63,50 @@ namespace CiscoOverwatch.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _500px_Cisco_logo_svg {
+        internal static System.Drawing.Bitmap _30 {
             get {
-                object obj = ResourceManager.GetObject("500px-Cisco_logo.svg", resourceCulture);
+                object obj = ResourceManager.GetObject("30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string ServerName {
+        internal static System.Drawing.Bitmap _32 {
             get {
-                return ResourceManager.GetString("ServerName", resourceCulture);
+                object obj = ResourceManager.GetObject("32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string SSHIP {
+        internal static System.Drawing.Bitmap _6 {
             get {
-                return ResourceManager.GetString("SSHIP", resourceCulture);
+                object obj = ResourceManager.GetObject("6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string SSHPassword {
+        internal static System.Drawing.Bitmap ciscologo {
             get {
-                return ResourceManager.GetString("SSHPassword", resourceCulture);
+                object obj = ResourceManager.GetObject("ciscologo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string SSHUsername {
+        internal static System.Drawing.Bitmap Vd7nh6h {
             get {
-                return ResourceManager.GetString("SSHUsername", resourceCulture);
+                object obj = ResourceManager.GetObject("Vd7nh6h", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

@@ -5,15 +5,35 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5558FB56-97F6-4B40-9378-B711E024E657}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CiscoOverwatch</RootNamespace>
     <AssemblyName>CiscoOverwatch</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://magicorpltd.co.uk/cisco/</UpdateUrl>
+    <SuiteName>Cisco</SuiteName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -31,15 +51,51 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\cisco.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CiscoOverwatch.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2E98668C38F47E6AFDA64EC1C4837BF0C2D3722F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CiscoOverwatch_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DiffieHellman">
-      <HintPath>..\..\DotNetSSH\bin\lib\Debug\DiffieHellman.dll</HintPath>
+      <HintPath>.\DiffieHellman.dll</HintPath>
     </Reference>
     <Reference Include="FSM.DotNetSSH">
-      <HintPath>..\..\DotNetSSH\bin\lib\Debug\FSM.DotNetSSH.dll</HintPath>
+      <HintPath>.\FSM.DotNetSSH.dll</HintPath>
     </Reference>
     <Reference Include="Org.Mentalis.Security">
-      <HintPath>..\..\DotNetSSH\bin\lib\Debug\Org.Mentalis.Security.dll</HintPath>
+      <HintPath>.\Org.Mentalis.Security.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +109,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewSwitch.Designer.cs">
+      <DependentUpon>AddNewSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwatchAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwatchAbout.Designer.cs">
+      <DependentUpon>OverwatchAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="OverwatchMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +135,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddNewSwitch.resx">
+      <DependentUpon>AddNewSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverwatchAbout.resx">
+      <DependentUpon>OverwatchAbout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OverwatchMain.resx">
       <DependentUpon>OverwatchMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +174,41 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\500px-Cisco_logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\100px-Cisco_logo.ico" />
+    <Content Include="Resources\cisco.ico" />
+    <Content Include="Resources\favicon.ico" />
+    <Content Include="Resources\favicon2.ico" />
+    <None Include="Resources\6.gif" />
+    <None Include="Resources\30.gif" />
+    <None Include="Resources\32.gif" />
+    <None Include="Resources\Vd7nh6h.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".cow">
+      <Visible>False</Visible>
+      <Description>Cisco Overwatch Settings</Description>
+      <Progid>1</Progid>
+      <DefaultIcon>favicon.ico</DefaultIcon>
+    </FileAssociation>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

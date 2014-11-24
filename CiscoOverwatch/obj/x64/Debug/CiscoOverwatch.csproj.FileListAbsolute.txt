@@ -1,0 +1,13 @@
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\x64\Debug\CiscoOverwatch.exe.config
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\x64\Debug\CiscoOverwatch.OverwatchMain.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\x64\Debug\CiscoOverwatch.OverwatchMainForm.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\x64\Debug\CiscoOverwatch.Properties.Resources.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\x64\Debug\CiscoOverwatch.csproj.GenerateResource.Cache
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\x64\Debug\CiscoOverwatch.exe
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\x64\Debug\CiscoOverwatch.pdb
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\x64\Debug\DiffieHellman.dll
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\x64\Debug\FSM.DotNetSSH.dll
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\x64\Debug\Org.Mentalis.Security.dll
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\x64\Debug\CiscoOverwatch.csprojResolveAssemblyReference.cache
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\x64\Debug\CiscoOverwatch.exe
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\x64\Debug\CiscoOverwatch.pdb

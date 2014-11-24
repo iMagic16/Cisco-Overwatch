@@ -1,0 +1,5 @@
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\Release\CiscoOverwatch.exe.config
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Release\CiscoOverwatch.OverwatchMain.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Release\CiscoOverwatch.OverwatchMainForm.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Release\CiscoOverwatch.Properties.Resources.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Release\CiscoOverwatch.csproj.GenerateResource.Cache
