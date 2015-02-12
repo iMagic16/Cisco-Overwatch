@@ -1,6 +1,6 @@
 ﻿namespace CiscoOverwatch
 {
-    partial class OverwatchEditVLANs
+    partial class OverwatchSplash
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // OverwatchEditVLANs
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(599, 261);
-            this.Name = "OverwatchEditVLANs";
-            this.Text = "OverwatchEditVLANs";
-            this.Load += new System.EventHandler(this.OverwatchEditVLANs_Load);
+            this.BackgroundImage = global::CiscoOverwatch.Properties.Resources.ciscologo;
+            this.ClientSize = new System.Drawing.Size(510, 287);
+            this.ForeColor = System.Drawing.Color.Transparent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Splash";
+            this.Text = "Splash";
             this.ResumeLayout(false);
 
         }

@@ -24,9 +24,6 @@ namespace CiscoOverwatch
         {
             Debug.ConOut("Form Loaded");
             LoadSettings();
-
-            OverwatchAbout Open = new OverwatchAbout();
-            Open.Show();
         }
 
 
@@ -47,8 +44,8 @@ namespace CiscoOverwatch
             }
             catch (Exception ex)
             {
-                Debug.ConOut("Unable to save settings...");
-                Debug.ConOut(ex.Message);
+                Debug.ConOut("Unable to save settings...",true);
+                Debug.ConOut(ex.Message,true);
             }
         }
 
@@ -124,21 +121,14 @@ namespace CiscoOverwatch
             }
             catch (Exception ex)
             {
-                Debug.ConOut("Unable to load settings...");
-                Debug.ConOut(ex.Message);
+                Debug.ConOut("Unable to load settings...", true);
+                Debug.ConOut(ex.Message, true);
             }
         }
 
-        //unfinished subroutine to check switches status
+        //Subroutine to check switches status
         public void RefreshSwitchStatus(bool AutoRefresh = false, int SwitchToRefresh = 1)
         {
-            //      if (AutoRefresh)
-            //      {
-            //           Debug.ConOut("Refreshing from timer... Delay of " + TxtRefreshDelay.Text);
-
-            //        }
-            // else if (Refresh)
-            //    {
             #region MightBeUsefulLater
             //  Refresh = false;
             /*
@@ -193,13 +183,15 @@ namespace CiscoOverwatch
                        */
 
             #endregion
+            //Try-catch to prevent crashing but still show us error in console
             try
             {
+                //To see switch data, we send a ping to that switch and then call the pingmanager subroutine to output it to the label, colour coded and all
                 if (SwitchToRefresh == 1)
                 {
                     Switch1Pinging.Visible = true;
                     Ping pingSender = new Ping();
-                    PingReply reply = pingSender.Send(Setting.Switch1IP, 1000);
+                    PingReply reply = pingSender.Send(Setting.Switch1IP, 400);
                     Switch1Pinging.Visible = false;
 
                     if (reply.Status == IPStatus.Success)
@@ -211,14 +203,14 @@ namespace CiscoOverwatch
                     else
                     {
                         Switch1PingTime.Text = "Offline";
-                        Debug.ConOut(reply.Status.ToString());
+                        Debug.ConOut("Switch 1: " + reply.Status.ToString(), true);
                     }
                 }
                 else if (SwitchToRefresh == 2)
                 {
                     Switch2Pinging.Visible = true;
                     Ping pingSender = new Ping();
-                    PingReply reply = pingSender.Send(Setting.Switch2IP, 1000);
+                    PingReply reply = pingSender.Send(Setting.Switch2IP, 400);
                     Switch2Pinging.Visible = false;
 
                     if (reply.Status == IPStatus.Success)
@@ -230,14 +222,14 @@ namespace CiscoOverwatch
                     else
                     {
                         Switch2PingTime.Text = "Offline";
-                        Debug.ConOut(reply.Status.ToString());
+                        Debug.ConOut("Switch 2: " + reply.Status.ToString(), true);
                     }
                 }
                 else if (SwitchToRefresh == 3)
                 {
                     Switch3Pinging.Visible = true;
                     Ping pingSender = new Ping();
-                    PingReply reply = pingSender.Send(Setting.Switch3IP, 1000);
+                    PingReply reply = pingSender.Send(Setting.Switch3IP, 400);
                     Switch3Pinging.Visible = false;
 
                     if (reply.Status == IPStatus.Success)
@@ -249,14 +241,14 @@ namespace CiscoOverwatch
                     else
                     {
                         Switch3PingTime.Text = "Offline";
-                        Debug.ConOut(reply.Status.ToString());
+                        Debug.ConOut("Switch 3: " + reply.Status.ToString(), true);
                     }
                 }
                 else if (SwitchToRefresh == 4)
                 {
                     Switch4Pinging.Visible = true;
                     Ping pingSender = new Ping();
-                    PingReply reply = pingSender.Send(Setting.Switch4IP, 1000);
+                    PingReply reply = pingSender.Send(Setting.Switch4IP, 400);
                     Switch4Pinging.Visible = false;
 
                     if (reply.Status == IPStatus.Success)
@@ -268,14 +260,14 @@ namespace CiscoOverwatch
                     else
                     {
                         Switch4PingTime.Text = "Offline";
-                        Debug.ConOut(reply.Status.ToString());
+                        Debug.ConOut("Switch 4: " + reply.Status.ToString(), true);
                     }
                 }
                 else if (SwitchToRefresh == 5)
                 {
                     Switch5Pinging.Visible = true;
                     Ping pingSender = new Ping();
-                    PingReply reply = pingSender.Send(Setting.Switch5IP, 1000);
+                    PingReply reply = pingSender.Send(Setting.Switch5IP, 400);
                     Switch5Pinging.Visible = false;
                     if (reply.Status == IPStatus.Success)
                     {
@@ -286,21 +278,23 @@ namespace CiscoOverwatch
                     else
                     {
                         Switch5PingTime.Text = "Offline";
-                        Debug.ConOut(reply.Status.ToString());
+                        Debug.ConOut("Switch 5: " + reply.Status.ToString(), true);
                     }
                 }
             }
             catch (Exception ex)
             {
-                Debug.ConOut(ex.Message);
+                Debug.ConOut("Unable to refresh...", true);
+                Debug.ConOut(ex.Message, true);
             }
         }
 
-
+        //Subroutine to manage switches and their labels to show ping on the form
         public void PingManager(int Ping, int SwitchPingLblToChange = 1)
         {
             try
             {
+                //Show the ping of the switches in their respective labels, colour code them and output to console their connection details. 
                 if (SwitchPingLblToChange == 1)
                 {
                     Switch1PingTime.Text = Ping.ToString() + "ms";
@@ -322,6 +316,7 @@ namespace CiscoOverwatch
                     }
                     else
                     {
+                        Switch1PingTime.ForeColor = Color.Red;
                         Debug.ConOut("Connection Quality: Abysmal");
                     }
                 }
@@ -342,6 +337,7 @@ namespace CiscoOverwatch
                     else if (Ping > 200 && Ping < 10000)
                     {
                         Switch2PingTime.ForeColor = Color.Red;
+                        Debug.ConOut("Connection Quality: Poor");
                     }
                     else
                     {
@@ -369,6 +365,7 @@ namespace CiscoOverwatch
                     }
                     else
                     {
+                        Switch4PingTime.ForeColor = Color.Red;
                         Debug.ConOut("Connection Quality: Abysmal");
                     }
                 }
@@ -393,6 +390,7 @@ namespace CiscoOverwatch
                     }
                     else
                     {
+                        Switch4PingTime.ForeColor = Color.Red;
                         Debug.ConOut("Connection Quality: Abysmal");
                     }
                 }
@@ -417,58 +415,61 @@ namespace CiscoOverwatch
                     }
                     else
                     {
+                        Switch4PingTime.ForeColor = Color.Red;
                         Debug.ConOut("Connection Quality: Abysmal");
                     }
                 }
             }
             catch (Exception ex)
             {
+                Debug.ConOut("Unable to ping...", true);
                 Debug.ConOut(ex.Message);
             }
-
-
-            //
-
-
-
-
         }
 
+        //Manually save
         private void BtnSave_Click(object sender, EventArgs e)
         {
             SaveSettings();
         }
 
+        //Open form to add switches
         private void BtnAddSw_Click(object sender, EventArgs e)
         {
-            AddNewSwitch AddSW = new AddNewSwitch();
+            OverwatchAddNewSwitch AddSW = new OverwatchAddNewSwitch();
             AddSW.Show();
             this.Hide();
         }
 
+        //Open form to edit switches
         private void BtnEditSw_Click(object sender, EventArgs e)
         {
-            OverwatchMain Main = new OverwatchMain();
-            Main.Show();
+            OverwatchEditVLAN EditVLAN = new OverwatchEditVLAN();
+            EditVLAN.Show();
         }
 
+        //Manually reload settings
         private void BtnLoadConfig_Click(object sender, EventArgs e)
         {
             LoadSettings();
         }
 
+        //Exit the app
         private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //Automatic refreshing
         private void ChkRefresh_CheckedChanged(object sender, EventArgs e)
         {
             try
             {
                 if (ChkRefresh.Checked)
                 {
+                    //Start automatic refreshing based on interval they set, disable the textbox
                     Debug.ConOut("Auto-refresh checked");
+                    //Timer intervals are measured in ms, so times by 1000 to get MS
                     PingTimer.Interval = Convert.ToInt32(TxtRefreshDelay.Text) * 1000;
                     Debug.ConOut("Timer interval set as: " + Convert.ToInt32(TxtRefreshDelay.Text) * 1000);
                     PingTimer.Enabled = true;
@@ -477,6 +478,7 @@ namespace CiscoOverwatch
                 }
                 else
                 {
+                    //Disable automatic refreshing 
                     Debug.ConOut("Auto-refresh unchecked");
                     PingTimer.Enabled = false;
                     TxtRefreshDelay.Enabled = true;
@@ -489,6 +491,7 @@ namespace CiscoOverwatch
             }
         }
 
+        //Refresh all switches one after the other 
         private void BtnRefresh_Click(object sender, EventArgs e)
         {
             RefreshSwitchStatus(false, 1);
@@ -503,6 +506,8 @@ namespace CiscoOverwatch
 
         }
 
+
+        //The button routines below call the RefreshSwitchStatus subroutine to (notAutoRefresh, Switch to refresh)
         private void Switch1IP_Click(object sender, EventArgs e)
         {
             RefreshSwitchStatus(false, 1);
@@ -538,7 +543,13 @@ namespace CiscoOverwatch
             RefreshSwitchStatus(true, 4);
             RefreshSwitchStatus(true, 5);
 
+        }
 
+        private void BtnCredentials_Click(object sender, EventArgs e)
+        {
+            OverwatchSwitchCredentialsLogin OverwtchCredLogin = new OverwatchSwitchCredentialsLogin();
+            OverwtchCredLogin.Show();
+            Debug.ConOut("Launching login window before showing the switch credentials...");
         }
 
     }

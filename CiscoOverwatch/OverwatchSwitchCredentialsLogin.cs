@@ -7,25 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FSM.DotNetSSH;
-using Org.Mentalis.Security;
-using System.Text.RegularExpressions;
-
 
 namespace CiscoOverwatch
 {
-    public partial class OverwatchEditVLANs : Form
+    public partial class OverwatchSwitchCredentialsLogin : Form
     {
-        public OverwatchEditVLANs()
+        public OverwatchSwitchCredentialsLogin()
         {
             InitializeComponent();
         }
 
-        private void OverwatchEditVLANs_Load(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
 
-
-            Debug.ConOut("OverWatch Edit VLANs loaded");
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CiscoOverwatch
 {
-    partial class AddNewSwitch
+    partial class OverwatchAddNewSwitch
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewSwitch));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OverwatchAddNewSwitch));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtSwitchName = new System.Windows.Forms.TextBox();
             this.TxtSwitchIP = new System.Windows.Forms.TextBox();

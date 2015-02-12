@@ -114,8 +114,9 @@
             this.label33 = new System.Windows.Forms.Label();
             this.Switch2IP = new System.Windows.Forms.Label();
             this.Switch1IP = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PingTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnCredentials = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -186,9 +187,9 @@
             this.Switch1Name.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Switch1Name.Location = new System.Drawing.Point(54, 21);
             this.Switch1Name.Name = "Switch1Name";
-            this.Switch1Name.Size = new System.Drawing.Size(27, 13);
+            this.Switch1Name.Size = new System.Drawing.Size(53, 13);
             this.Switch1Name.TabIndex = 17;
-            this.Switch1Name.Text = "void";
+            this.Switch1Name.Text = "Unknown";
             // 
             // Switch2Name
             // 
@@ -196,9 +197,9 @@
             this.Switch2Name.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Switch2Name.Location = new System.Drawing.Point(54, 47);
             this.Switch2Name.Name = "Switch2Name";
-            this.Switch2Name.Size = new System.Drawing.Size(27, 13);
+            this.Switch2Name.Size = new System.Drawing.Size(53, 13);
             this.Switch2Name.TabIndex = 18;
-            this.Switch2Name.Text = "void";
+            this.Switch2Name.Text = "Unknown";
             // 
             // Switch3Name
             // 
@@ -206,9 +207,9 @@
             this.Switch3Name.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Switch3Name.Location = new System.Drawing.Point(54, 73);
             this.Switch3Name.Name = "Switch3Name";
-            this.Switch3Name.Size = new System.Drawing.Size(27, 13);
+            this.Switch3Name.Size = new System.Drawing.Size(53, 13);
             this.Switch3Name.TabIndex = 19;
-            this.Switch3Name.Text = "void";
+            this.Switch3Name.Text = "Unknown";
             // 
             // Switch4Name
             // 
@@ -216,9 +217,9 @@
             this.Switch4Name.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Switch4Name.Location = new System.Drawing.Point(54, 99);
             this.Switch4Name.Name = "Switch4Name";
-            this.Switch4Name.Size = new System.Drawing.Size(27, 13);
+            this.Switch4Name.Size = new System.Drawing.Size(53, 13);
             this.Switch4Name.TabIndex = 20;
-            this.Switch4Name.Text = "void";
+            this.Switch4Name.Text = "Unknown";
             // 
             // Switch5Name
             // 
@@ -226,9 +227,9 @@
             this.Switch5Name.ForeColor = System.Drawing.SystemColors.InfoText;
             this.Switch5Name.Location = new System.Drawing.Point(54, 125);
             this.Switch5Name.Name = "Switch5Name";
-            this.Switch5Name.Size = new System.Drawing.Size(27, 13);
+            this.Switch5Name.Size = new System.Drawing.Size(53, 13);
             this.Switch5Name.TabIndex = 21;
-            this.Switch5Name.Text = "void";
+            this.Switch5Name.Text = "Unknown";
             // 
             // label11
             // 
@@ -281,7 +282,7 @@
             this.BtnAddSw.Name = "BtnAddSw";
             this.BtnAddSw.Size = new System.Drawing.Size(94, 23);
             this.BtnAddSw.TabIndex = 28;
-            this.BtnAddSw.Text = "Add a switch";
+            this.BtnAddSw.Text = "Edit a switch";
             this.BtnAddSw.UseVisualStyleBackColor = true;
             this.BtnAddSw.Click += new System.EventHandler(this.BtnAddSw_Click);
             // 
@@ -291,7 +292,7 @@
             this.BtnEditSw.Name = "BtnEditSw";
             this.BtnEditSw.Size = new System.Drawing.Size(94, 23);
             this.BtnEditSw.TabIndex = 29;
-            this.BtnEditSw.Text = "Edit data";
+            this.BtnEditSw.Text = "Edit VLANs";
             this.BtnEditSw.UseVisualStyleBackColor = true;
             this.BtnEditSw.Click += new System.EventHandler(this.BtnEditSw_Click);
             // 
@@ -393,6 +394,7 @@
             this.BtnSave.TabIndex = 40;
             this.BtnSave.Text = "Save Configuration";
             this.BtnSave.UseVisualStyleBackColor = true;
+            this.BtnSave.Visible = false;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // Switch1VLANID
@@ -785,9 +787,9 @@
             this.Switch5PingTime.ForeColor = System.Drawing.Color.Red;
             this.Switch5PingTime.Location = new System.Drawing.Point(37, 125);
             this.Switch5PingTime.Name = "Switch5PingTime";
-            this.Switch5PingTime.Size = new System.Drawing.Size(27, 13);
+            this.Switch5PingTime.Size = new System.Drawing.Size(53, 13);
             this.Switch5PingTime.TabIndex = 45;
-            this.Switch5PingTime.Text = "void";
+            this.Switch5PingTime.Text = "Unknown";
             // 
             // label9
             // 
@@ -804,9 +806,9 @@
             this.Switch4PingTime.ForeColor = System.Drawing.Color.Red;
             this.Switch4PingTime.Location = new System.Drawing.Point(37, 99);
             this.Switch4PingTime.Name = "Switch4PingTime";
-            this.Switch4PingTime.Size = new System.Drawing.Size(27, 13);
+            this.Switch4PingTime.Size = new System.Drawing.Size(53, 13);
             this.Switch4PingTime.TabIndex = 44;
-            this.Switch4PingTime.Text = "void";
+            this.Switch4PingTime.Text = "Unknown";
             // 
             // label26
             // 
@@ -823,9 +825,9 @@
             this.Switch3PingTime.ForeColor = System.Drawing.Color.Red;
             this.Switch3PingTime.Location = new System.Drawing.Point(37, 73);
             this.Switch3PingTime.Name = "Switch3PingTime";
-            this.Switch3PingTime.Size = new System.Drawing.Size(27, 13);
+            this.Switch3PingTime.Size = new System.Drawing.Size(53, 13);
             this.Switch3PingTime.TabIndex = 43;
-            this.Switch3PingTime.Text = "void";
+            this.Switch3PingTime.Text = "Unknown";
             // 
             // label28
             // 
@@ -842,9 +844,9 @@
             this.Switch2PingTime.ForeColor = System.Drawing.Color.Red;
             this.Switch2PingTime.Location = new System.Drawing.Point(37, 47);
             this.Switch2PingTime.Name = "Switch2PingTime";
-            this.Switch2PingTime.Size = new System.Drawing.Size(27, 13);
+            this.Switch2PingTime.Size = new System.Drawing.Size(53, 13);
             this.Switch2PingTime.TabIndex = 42;
-            this.Switch2PingTime.Text = "void";
+            this.Switch2PingTime.Text = "Unknown";
             // 
             // Switch1PingTime
             // 
@@ -852,9 +854,9 @@
             this.Switch1PingTime.ForeColor = System.Drawing.Color.Red;
             this.Switch1PingTime.Location = new System.Drawing.Point(37, 21);
             this.Switch1PingTime.Name = "Switch1PingTime";
-            this.Switch1PingTime.Size = new System.Drawing.Size(27, 13);
+            this.Switch1PingTime.Size = new System.Drawing.Size(53, 13);
             this.Switch1PingTime.TabIndex = 41;
-            this.Switch1PingTime.Text = "void";
+            this.Switch1PingTime.Text = "Unknown";
             // 
             // BtnLoadConfig
             // 
@@ -864,6 +866,7 @@
             this.BtnLoadConfig.TabIndex = 62;
             this.BtnLoadConfig.Text = "Load Configuration";
             this.BtnLoadConfig.UseVisualStyleBackColor = true;
+            this.BtnLoadConfig.Visible = false;
             this.BtnLoadConfig.Click += new System.EventHandler(this.BtnLoadConfig_Click);
             // 
             // BtnExit
@@ -879,7 +882,7 @@
             // ChkRefresh
             // 
             this.ChkRefresh.AutoSize = true;
-            this.ChkRefresh.Location = new System.Drawing.Point(938, 201);
+            this.ChkRefresh.Location = new System.Drawing.Point(937, 240);
             this.ChkRefresh.Name = "ChkRefresh";
             this.ChkRefresh.Size = new System.Drawing.Size(220, 17);
             this.ChkRefresh.TabIndex = 64;
@@ -889,7 +892,7 @@
             // 
             // TxtRefreshDelay
             // 
-            this.TxtRefreshDelay.Location = new System.Drawing.Point(1090, 199);
+            this.TxtRefreshDelay.Location = new System.Drawing.Point(1089, 238);
             this.TxtRefreshDelay.Name = "TxtRefreshDelay";
             this.TxtRefreshDelay.Size = new System.Drawing.Size(18, 20);
             this.TxtRefreshDelay.TabIndex = 65;
@@ -897,7 +900,7 @@
             // 
             // BtnRefresh
             // 
-            this.BtnRefresh.Location = new System.Drawing.Point(937, 224);
+            this.BtnRefresh.Location = new System.Drawing.Point(936, 263);
             this.BtnRefresh.Name = "BtnRefresh";
             this.BtnRefresh.Size = new System.Drawing.Size(204, 23);
             this.BtnRefresh.TabIndex = 66;
@@ -949,9 +952,9 @@
             this.Switch5IP.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Switch5IP.Location = new System.Drawing.Point(26, 125);
             this.Switch5IP.Name = "Switch5IP";
-            this.Switch5IP.Size = new System.Drawing.Size(27, 13);
+            this.Switch5IP.Size = new System.Drawing.Size(53, 13);
             this.Switch5IP.TabIndex = 45;
-            this.Switch5IP.Text = "void";
+            this.Switch5IP.Text = "Unknown";
             this.Switch5IP.Click += new System.EventHandler(this.Switch5IP_Click);
             // 
             // label29
@@ -970,9 +973,9 @@
             this.Switch4IP.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Switch4IP.Location = new System.Drawing.Point(26, 99);
             this.Switch4IP.Name = "Switch4IP";
-            this.Switch4IP.Size = new System.Drawing.Size(27, 13);
+            this.Switch4IP.Size = new System.Drawing.Size(53, 13);
             this.Switch4IP.TabIndex = 44;
-            this.Switch4IP.Text = "void";
+            this.Switch4IP.Text = "Unknown";
             this.Switch4IP.Click += new System.EventHandler(this.Switch4IP_Click);
             // 
             // label31
@@ -991,9 +994,9 @@
             this.Switch3IP.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Switch3IP.Location = new System.Drawing.Point(26, 73);
             this.Switch3IP.Name = "Switch3IP";
-            this.Switch3IP.Size = new System.Drawing.Size(27, 13);
+            this.Switch3IP.Size = new System.Drawing.Size(53, 13);
             this.Switch3IP.TabIndex = 43;
-            this.Switch3IP.Text = "void";
+            this.Switch3IP.Text = "Unknown";
             this.Switch3IP.Click += new System.EventHandler(this.Switch3IP_Click);
             // 
             // label33
@@ -1012,9 +1015,9 @@
             this.Switch2IP.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Switch2IP.Location = new System.Drawing.Point(26, 47);
             this.Switch2IP.Name = "Switch2IP";
-            this.Switch2IP.Size = new System.Drawing.Size(27, 13);
+            this.Switch2IP.Size = new System.Drawing.Size(53, 13);
             this.Switch2IP.TabIndex = 42;
-            this.Switch2IP.Text = "void";
+            this.Switch2IP.Text = "Unknown";
             this.Switch2IP.Click += new System.EventHandler(this.Switch2IP_Click);
             // 
             // Switch1IP
@@ -1024,10 +1027,15 @@
             this.Switch1IP.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Switch1IP.Location = new System.Drawing.Point(26, 21);
             this.Switch1IP.Name = "Switch1IP";
-            this.Switch1IP.Size = new System.Drawing.Size(27, 13);
+            this.Switch1IP.Size = new System.Drawing.Size(53, 13);
             this.Switch1IP.TabIndex = 41;
-            this.Switch1IP.Text = "void";
+            this.Switch1IP.Text = "Unknown";
             this.Switch1IP.Click += new System.EventHandler(this.Switch1IP_Click);
+            // 
+            // PingTimer
+            // 
+            this.PingTimer.Interval = 5000;
+            this.PingTimer.Tick += new System.EventHandler(this.PingTimer_Tick);
             // 
             // pictureBox1
             // 
@@ -1039,16 +1047,24 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // PingTimer
+            // BtnCredentials
             // 
-            this.PingTimer.Interval = 5000;
-            this.PingTimer.Tick += new System.EventHandler(this.PingTimer_Tick);
+            this.BtnCredentials.Enabled = false;
+            this.BtnCredentials.Location = new System.Drawing.Point(937, 201);
+            this.BtnCredentials.Name = "BtnCredentials";
+            this.BtnCredentials.Size = new System.Drawing.Size(203, 33);
+            this.BtnCredentials.TabIndex = 67;
+            this.BtnCredentials.Text = "Access Switch Credentials";
+            this.BtnCredentials.UseVisualStyleBackColor = true;
+            this.BtnCredentials.Visible = false;
+            this.BtnCredentials.Click += new System.EventHandler(this.BtnCredentials_Click);
             // 
             // OverwatchMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 349);
+            this.Controls.Add(this.BtnCredentials);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.BtnRefresh);
             this.Controls.Add(this.TxtRefreshDelay);
@@ -1186,6 +1202,7 @@
         private System.Windows.Forms.PictureBox Switch2VLANload;
         private System.Windows.Forms.PictureBox Switch1VLANload;
         private System.Windows.Forms.Timer PingTimer;
+        private System.Windows.Forms.Button BtnCredentials;
 
     }
 }

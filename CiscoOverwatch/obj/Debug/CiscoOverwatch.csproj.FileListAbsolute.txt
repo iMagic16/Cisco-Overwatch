@@ -31,12 +31,37 @@ D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\Cisc
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\Debug\CiscoOverwatch.exe
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\Debug\CiscoOverwatch.pdb
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.csprojResolveAssemblyReference.cache
-D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchMain.resources
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchMainForm.resources
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.Properties.Resources.resources
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.csproj.GenerateResource.Cache
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\Debug\DiffieHellman.dll
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\Debug\FSM.DotNetSSH.dll
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\bin\Debug\Org.Mentalis.Security.dll
-D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.AddNewSwitch.resources
 D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchAbout.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchAddNewSwitch.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchManualSSH.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchSwitchCredentials.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchMainFormLogin.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchSwitchCredentialsLogin.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchSplash.resources
+D:\Dropbox\Visual Studio 2013\Cisco\CiscoOverwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchEditVLAN.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\bin\Debug\CiscoOverwatch.exe.config
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.exe
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.pdb
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\bin\Debug\CiscoOverwatch.exe
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\bin\Debug\CiscoOverwatch.pdb
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\bin\Debug\DiffieHellman.dll
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\bin\Debug\FSM.DotNetSSH.dll
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\bin\Debug\Org.Mentalis.Security.dll
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.csprojResolveAssemblyReference.cache
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchAddNewSwitch.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchAbout.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchMainFormLogin.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchManualSSH.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchMainForm.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchSwitchCredentials.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchSwitchCredentialsLogin.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.Properties.Resources.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchSplash.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.OverwatchEditVLAN.resources
+D:\Dropbox\Windows Sync\Xenon-II\Documents\GitHub\Cisco-Overwatch\CiscoOverwatch\obj\Debug\CiscoOverwatch.csproj.GenerateResource.Cache

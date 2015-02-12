@@ -1,6 +1,6 @@
 ﻿namespace CiscoOverwatch
 {
-    partial class OverwatchMain
+    partial class OverwatchManualSSH
     {
 
         /// <summary>
@@ -29,7 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OverwatchMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OverwatchManualSSH));
             this.BtnSSHConnect = new System.Windows.Forms.Button();
             this.SSHHost = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();

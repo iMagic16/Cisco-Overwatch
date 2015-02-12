@@ -55,7 +55,7 @@
     <ApplicationIcon>Resources\cisco.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CiscoOverwatch.Program</StartupObject>
+    <StartupObject>CiscoOverwatch.Overwatch</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -109,11 +109,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewSwitch.cs">
+    <Compile Include="OverwatchAddNewSwitch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewSwitch.Designer.cs">
-      <DependentUpon>AddNewSwitch.cs</DependentUpon>
+    <Compile Include="OverwatchAddNewSwitch.Designer.cs">
+      <DependentUpon>OverwatchAddNewSwitch.cs</DependentUpon>
     </Compile>
     <Compile Include="OverwatchAbout.cs">
       <SubType>Form</SubType>
@@ -121,11 +121,17 @@
     <Compile Include="OverwatchAbout.Designer.cs">
       <DependentUpon>OverwatchAbout.cs</DependentUpon>
     </Compile>
-    <Compile Include="OverwatchMain.cs">
+    <Compile Include="OverwatchMainFormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OverwatchMain.Designer.cs">
-      <DependentUpon>OverwatchMain.cs</DependentUpon>
+    <Compile Include="OverwatchMainFormLogin.Designer.cs">
+      <DependentUpon>OverwatchMainFormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwatchManualSSH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwatchManualSSH.Designer.cs">
+      <DependentUpon>OverwatchManualSSH.cs</DependentUpon>
     </Compile>
     <Compile Include="OverwatchMainForm.cs">
       <SubType>Form</SubType>
@@ -133,19 +139,52 @@
     <Compile Include="OverwatchMainForm.Designer.cs">
       <DependentUpon>OverwatchMainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="OverwatchSwitchCredentials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwatchSwitchCredentials.Designer.cs">
+      <DependentUpon>OverwatchSwitchCredentials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwatchSwitchCredentialsLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwatchSwitchCredentialsLogin.Designer.cs">
+      <DependentUpon>OverwatchSwitchCredentialsLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Overwatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddNewSwitch.resx">
-      <DependentUpon>AddNewSwitch.cs</DependentUpon>
+    <Compile Include="OverwatchSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwatchSplash.Designer.cs">
+      <DependentUpon>OverwatchSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwatchEditVLAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwatchEditVLAN.Designer.cs">
+      <DependentUpon>OverwatchEditVLAN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="OverwatchAddNewSwitch.resx">
+      <DependentUpon>OverwatchAddNewSwitch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OverwatchAbout.resx">
       <DependentUpon>OverwatchAbout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OverwatchMain.resx">
-      <DependentUpon>OverwatchMain.cs</DependentUpon>
+    <EmbeddedResource Include="OverwatchMainFormLogin.resx">
+      <DependentUpon>OverwatchMainFormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverwatchManualSSH.resx">
+      <DependentUpon>OverwatchManualSSH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OverwatchMainForm.resx">
       <DependentUpon>OverwatchMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverwatchSwitchCredentials.resx">
+      <DependentUpon>OverwatchSwitchCredentials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverwatchSwitchCredentialsLogin.resx">
+      <DependentUpon>OverwatchSwitchCredentialsLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,6 +196,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="OverwatchSplash.resx">
+      <DependentUpon>OverwatchSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverwatchEditVLAN.resx">
+      <DependentUpon>OverwatchEditVLAN.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

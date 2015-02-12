@@ -13,13 +13,12 @@ using System.Text.RegularExpressions;
 
 namespace CiscoOverwatch
 {
-    public partial class OverwatchMain : Form
+    public partial class OverwatchManualSSH : Form
     {
 
-        public OverwatchMain()
+        public OverwatchManualSSH()
         {
             InitializeComponent();
-
         }
 
         //Init my.settings saving
@@ -48,7 +47,7 @@ namespace CiscoOverwatch
             SSHPort.Text = Convert.ToString(Setting.SSHPort);
             SSHCommand.Text = Setting.SSHLastCMD;
             //Call subroutine to add datetime to then output message to console
-            Debug.ConOut("Settings loaded on OverwatchMain");
+            Debug.ConOut("Settings loaded on OverwatchManualSSH");
         }
 
         bool AlreadyConnected;
@@ -119,15 +118,10 @@ namespace CiscoOverwatch
                             string macAddr = "";
                             macAddr = lines[i].Substring(7, 17);
                             Debug.ConOut("Mac Address of " + SSHHost.Text + ": " + macAddr);
-
                         }
-
                     }
-
-
                     //This closes the command from the runtime (DotNetSSH)
                     exec.Close();
-
                 }
 
                 catch (Exception ex)
